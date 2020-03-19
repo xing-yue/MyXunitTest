@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
  *
  * @Description:
  */
-public class ShoppingTest {
+public class ShoppingTestNew {
 
     Login login = new Login();
     Shopping shopping = new Shopping();
@@ -64,10 +64,10 @@ public class ShoppingTest {
      * @param param1
      * @param param2
      */
-    @Test(parameters = {"aa","bb"})
+    /*@Test(parameters = {"aa","bb"})
     public void testS(String param1, String param2){//@Optional("test1")String param1, @Optional("test2")String param
         System.out.println(param1+param2);
-    }
+    }*/
 
 
 
@@ -93,6 +93,7 @@ public class ShoppingTest {
         //执行购买流程
         int results = shopping.buys(proId,count);
         Assert.assertEquals(results,shoppingExpect);
+        System.out.println("购买成功");
     }
 
 

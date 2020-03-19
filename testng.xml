@@ -14,6 +14,12 @@
                     <include name="testGetPrice"></include>
                 </methods>
             </class>
+            <class name="DemoXunit.ShoppingTestNew">
+                <methods>
+                    <include name="testDatas"></include>
+                </methods>
+
+            </class>
         </classes>
     </test>
 </suite>
